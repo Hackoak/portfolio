@@ -32,6 +32,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import discord from "./social/discord.svg";
+import email from "./social/email.svg";
+import github_out from "./social/github.svg";
+import linkedin from "./social/linkedin.svg";
+import twitter from "./social/twitter.svg";
+
 export {
   logo,
   backend,
@@ -63,4 +69,9 @@ export {
   tripguide,
   astutex,
   ilapz,
+  twitter,
+  linkedin,
+  github_out,
+  discord,
+  email,
 };

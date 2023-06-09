@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { twitter, linkedin, github_out, discord, email } from "../../assets";
 
 const ButtonComponent = () => {
   const [showDiv, setShowDiv] = useState(false);
@@ -23,19 +24,19 @@ const ButtonComponent = () => {
         {!showDiv && (
           <div className="{ flex flex-row }">
             <div className="{ btn }">
-              <img src="src/assets/social/github.svg" className="{ sicon }" />
+              <img src={github_out} className="{ sicon }" />
             </div>
             <div className="{ btn }">
-              <img src="src/assets/social/linkedin.svg" className="{ sicon }" />
+              <img src={linkedin} className="{ sicon }" />
             </div>
             <div className="{ btn }">
-              <img src="src/assets/social/discord.svg" className="{  }" />
+              <img src={discord} className="{  }" />
             </div>
             <div className="{ btn }">
-              <img src="src/assets/social/email.svg" className="{  }" />
+              <img src={email} className="{  }" />
             </div>{" "}
             <div className="{ btn }">
-              <img src="src/assets/social/twitter.svg" className="{  }" />
+              <img src={twitter} className="{  }" />
             </div>
           </div>
         )}
