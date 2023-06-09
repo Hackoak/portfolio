@@ -1,13 +1,13 @@
 {
-  "homepage": "https://hackoak.github.io/Hackoak",
-  "name": "hari-portfolio",
+  "homepage": "https://hackoak.github.io/portfolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "predeploy": "npm run build ",
-    "deploy": "gh-pages -d build",
+    "deploy": "vite build && gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
