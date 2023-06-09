@@ -6,6 +6,8 @@ export default defineConfig({
   plugins: [react()],
   base: '/portfolio/',
   build: {
-    outDir: 'build'
+    outDir: 'build',
+    chunkSizeWarningLimit: 1000, // Set your desired chunk size limit here
+
   }
 })
