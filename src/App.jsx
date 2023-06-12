@@ -11,8 +11,23 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+  import { Gradient } from "./utils/gradient.js";
+import React, { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    // Function to execute when the app initializes
+    console.log("App initialized");
+    // You can perform any initialization tasks here
+
+    // Clean up function (optional)
+    return () => {
+      // Clean up tasks (if needed)
+  const gradient = new Gradient();
+  gradient.initGradient("#gradient-canvas");
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -21,29 +36,29 @@ const App = () => {
           <Hero />
         </div>
 
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
-            <div className="blur-content ">
-              <About />
-            </div>
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+          <div className="blur-content no-bg">
+            <About />
           </div>
-
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
-            <div className="blur-content ">
-              <Experience />
-            </div>
-          </div>
-
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
-            <div className="blur-content ">
-              <Tech />
-            </div>
-          </div>
+        </div>
 
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
-            <div className="blur-content ">
-              <Works />
-            </div>
+          <div className="blur-content ">
+            <Experience />
           </div>
+        </div>
+
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+          <div className="blur-skill-content ">
+            <Tech />
+          </div>
+        </div>
+
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+          <div className="blur-project-content ">
+            <Works />
+          </div>
+        </div>
 
         {/* <div className="relative z-0 bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
@@ -60,7 +75,6 @@ const App = () => {
             </div>
           </div>
         </div>
-      
       </div>
     </BrowserRouter>
   );

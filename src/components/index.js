@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas, ProfileCanvas, ButtonComponent, bgg } from './canvas';
+import { EarthCanvas, BallCanvas,  StarsCanvas, ProfileCanvas, ButtonComponent, bgg } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -22,7 +22,6 @@ export {
   CanvasLoader,
   EarthCanvas, 
   BallCanvas, 
-  ComputersCanvas, 
   StarsCanvas,
   ProfileCanvas,
   ButtonComponent,

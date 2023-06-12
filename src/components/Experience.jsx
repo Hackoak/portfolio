@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
         "backdrop-filter": "blur(20px)",
         'box-shadow': '0 0 10px rgba(0, 0, 0, 0.2)'
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{ borderRight: "7px dashed  #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -70,7 +70,9 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p
+          className={`${styles.sectionSubText} name-text-gradient text-center`}
+        >
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
@@ -78,7 +80,7 @@ const Experience = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 flex flex-col'>
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

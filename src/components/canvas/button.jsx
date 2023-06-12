@@ -8,7 +8,6 @@ const ButtonComponent = () => {
     setShowDiv(!showDiv);
   };
 
-
   return (
     <div>
       <button onClick={handleClick}>
@@ -23,10 +22,10 @@ const ButtonComponent = () => {
         )}
         {!showDiv && (
           <div className="{ flex flex-row }">
-            <div className="{ btn }">
+            <div className="{ btn text-white}">
               <img src={github_out} className="{ sicon }" />
             </div>
-            <div className="{ btn }">
+            <div className="{ btn blur}">
               <img src={linkedin} className="{ sicon }" />
             </div>
             <div className="{ btn }">

@@ -8,15 +8,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-
+:root {
+  background-color: #060606;
+  color: #e5e7eb;
+  --gradient-1: linear-gradient(118deg, #4ed2f3, #bd93da 80%, #6270ee);
+  --gradient-1-item: linear-gradient(-50deg, #000, #12152e 99%);
+  --gradient-2: linear-gradient(91.83deg, #d03c4a 2.26%, #ac4ada 95.81%);
+  --gradient-3: #111420;
+  background: #111420;
+  background: var(--gradient-3);
+  background-size: 100%;
+}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
   display: block;
+}
+
+.name-text-gradient {
+  background: linear-gradient(118deg, #4ed2f3, #bd93da 80%, #6270ee);
+  background-clip: text;
+  /* font-weight: 700; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#gradient-canvas {
+  width: 100%;
+  height: 100%;
+  /* red */
+  /* --gradient-color-1: #d50018;
+  --gradient-color-2: #25001b;
+  --gradient-color-3: #410041;
+  --gradient-color-4: #0e003f; */
+
+  /* stripe  */
+  /* --gradient-color-1: #a960ee; 
+  --gradient-color-2: #ff333d; 
+  --gradient-color-3: #90e0ff;  
+  --gradient-color-4: #ffcb57; */
+
+  --gradient-color-1: #24144c;
+  --gradient-color-2: #6d459a;
+  --gradient-color-3: #aa436f;
+  --gradient-color-4: #7721d6;
+
+  --gradientColorZeroTransparent: rgba(169, 96, 238, 0);
+  --gradientColorOneTransparent: rgba(255, 51, 61, 0);
+  --gradientColorTwoTransparent: rgba(144, 224, 255, 0);
+  --gradientColorThreeTransparent: rgba(255, 203, 87, 0);
 }
 
 .black-gradient {
@@ -55,7 +99,6 @@
   background: -webkit-linear-gradient(-90.13deg, #c6a500 1.9%, #ffc3422a 97.5%);
 }
 
-
 .yellow-text-gradient {
   background: #f1db11; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -71,7 +114,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
@@ -150,21 +192,15 @@
   transform: translateZ(0);
 }
 .profile-img {
-  align-items: end; 
-   float: right;
+  align-items: end;
+  float: right;
   /* left: 300px;
   /* transform: scaleX(-1); */
   margin-right: -285px;
-
 }
-/* double: Creates a double-line border.
-groove: Creates a 3D grooved border effect.
-ridge: Creates a 3D ridged border effect.
-inset: Creates a 3D inset border effect.
-outset: Creates a 3D outset border effect. */
 
-.lcbtn{
-  width:100%;
+.lcbtn {
+  width: 100%;
   /* height: 64px; */
   padding: 8px;
   border: 2px dashed white;
@@ -174,11 +210,11 @@ outset: Creates a 3D outset border effect. */
   color: transparent;
   transition: transform 0.3s ease;
 }
-.beta{
+.beta {
   /* width:100%; */
   /* padding: 8px; */
-  margin-left:20px;
-  padding-top:2px;
+  margin-left: 20px;
+  padding-top: 2px;
   border: 2px dashed white;
   /* border: 2px dashed #c6a500; */
   border-radius: 10px;
@@ -186,14 +222,14 @@ outset: Creates a 3D outset border effect. */
   /* transition: transform 0.3s ease; */
 }
 .btn {
-  width:55px;
+  width: 55px;
   height: 55px;
   margin-right: 21px;
-  color: transparent;
-  align-items: center; 
+  /* color: transparent; */
+  align-items: center;
 
-  background-color: transparent;
-  border: 2px dashed white;
+  /* background-color: transparent; */
+  border: 2px dashed #ffffff;
   padding: 10px;
   border-radius: 20px;
   /* background: linear-gradient(
@@ -204,21 +240,21 @@ outset: Creates a 3D outset border effect. */
     #406aff 117.04%
   ); */
 }
-.sicon{
-    align-items: center; 
-    padding: 5px;
-
+.sicon {
+  align-items: center;
+  padding: 5px;
 }
-.lcbtn:hover, .btn:hover {
-    color: transparent;
-    background-color: transparent;
-    transform: scale(1.03);
+.lcbtn:hover,
+.btn:hover {
+  color: transparent;
+  /* background-color: transparent; */
+  transform: scale(1.04);
+  background-color: hsla(0, 0%, 100%, 0.345);
 
-    box-shadow: 0px 4.4218px 107px 1px rgba(170, 124, 168, 0.51);
-
+  box-shadow: 0px 4.4218px 107px 1px rgba(170, 124, 168, 0.51);
 }
 .blur-bg {
-  background-image: url('src/assets/herobg.png');
+  background-image: url("src/assets/herobg.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -232,12 +268,104 @@ outset: Creates a 3D outset border effect. */
   /* background-color: rgba(255, 255, 255, 0.523); */
   width: 100%;
 
+  /* background-color: rgb(10, 108, 94); */
+  background-image: radial-gradient(
+      at 89% 24%,
+      rgb(36, 20, 76) 0,
+      transparent 13%
+    ),
+    radial-gradient(at 44% 59%, rgb(109, 69, 154) 0, transparent 33%),
+    radial-gradient(at 53% 25%, rgb(170, 67, 111) 0, transparent 30%),
+    radial-gradient(at 93% 28%, rgb(119, 33, 214) 0, transparent 41%),
+    radial-gradient(at 5% 23%, rgb(109, 69, 154) 0, transparent 22%),
+    radial-gradient(at 32% 56%, rgb(6, 71, 106) 0, transparent 9%);
+
+  /* --gradient-color-1: #24144c;
+  --gradient-color-2: #6d459a;
+  --gradient-color-3: #aa436f;
+  --gradient-color-4: #7721d6; */
+
   /* padding: 20px;
   border-radius: 8px; */
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.blur-card-content {
+  /* background-color: rgba(255, 255, 255, 0.523); */
+  width: 100%;
+  /* background-color: rgb(10, 108, 94); */
+  background-image: radial-gradient(
+      at 89% 24%,
+      rgba(188, 186, 191, 0.132) 0,
+      transparent 13%
+    ),
+    radial-gradient(at 24% 89%, rgb(109, 69, 154) 0, transparent 43%),
+    radial-gradient(at 94% 99%, rgb(109, 69, 154) 0, transparent 43%),
+    radial-gradient(at 53% 25%, rgba(170, 67, 112, 0.362) 0, transparent 50%),
+    radial-gradient(at 93% 48%, rgb(119, 33, 214) 0, transparent 41%),
+    radial-gradient(at 5% 23%, rgb(109, 69, 154) 0, transparent 29%);
 
+  /* --gradient-color-1: #24144c;
+  --gradient-color-2: #6d459a;
+  --gradient-color-3: #aa436f;
+  --gradient-color-4: #7721d6; */
+
+  /* padding: 20px;
+  border-radius: 8px; */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.blur-skill-content {
+  /* background-color: rgba(255, 255, 255, 0.523); */
+  width: 100%;
+  /* background-color: rgb(10, 108, 94); */
+  background-image: radial-gradient(
+      at 89% 24%,
+      rgba(188, 186, 191, 0.132) 0,
+      transparent 13%
+    ),
+    radial-gradient(at 24% 89%, rgb(109, 69, 154) 0, transparent 43%),
+    radial-gradient(at 94% 99%, rgb(109, 69, 154) 0, transparent 43%),
+    radial-gradient(at 53% 25%, rgba(170, 67, 112, 0.362) 0, transparent 50%),
+    radial-gradient(at 93% 48%, rgb(119, 33, 214) 0, transparent 41%),
+    radial-gradient(at 5% 23%, rgb(109, 69, 154) 0, transparent 29%);
+
+  /* --gradient-color-1: #24144c;
+  --gradient-color-2: #6d459a;
+  --gradient-color-3: #aa436f;
+  --gradient-color-4: #7721d6; */
+
+  /* padding: 20px;
+  border-radius: 8px; */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.blur-project-content {
+  /* background-color: rgba(255, 255, 255, 0.523); */
+  width: 100%;
+
+  /* background-color: rgb(70, 15, 165);
+        background-image: radial-gradient(at 95% 12%, rgb(30, 33, 34) 0, transparent 39%), radial-gradient(at 46% 3%, rgb(86, 93, 97) 0, transparent 94%), radial-gradient(at 71% 14%, rgb(16, 118, 69) 0, transparent 66%), radial-gradient(at 68% 63%, rgb(8, 74, 48) 0, transparent 28%), radial-gradient(at 88% 55%, rgb(38, 42, 43) 0, transparent 6%), radial-gradient(at 23% 86%, rgb(57, 68, 84) 0, transparent 35%); */
+      
+  background-color: rgba(215, 215, 215, 0.485);
+  background-color: rgb(63, 2, 78);
+  background-image: radial-gradient(
+      at 27% 99%,
+      rgb(113, 6, 129) 0,
+      transparent 13%
+    ),
+    radial-gradient(at 87% 95%, rgba(201, 14, 61, 0) 0, transparent 43%),
+    radial-gradient(at 45% 54%, rgb(86, 30, 172) 0, transparent 43%),
+    radial-gradient(at 67% 37%, rgb(155, 52, 10) 0, transparent 50%),
+    radial-gradient(at 40% 37%, rgb(102, 23, 23) 0, transparent 41%),
+    radial-gradient(at 45% 54%, rgb(86, 30, 172) 0, transparent 29%);
+
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.no-bg {
+  background-image: none;
+}
 .vertical-timeline-element-content {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
@@ -247,7 +375,6 @@ outset: Creates a 3D outset border effect. */
 
 .gradient,
 .active {
-  
   background: linear-gradient(
     92.23deg,
     #406aff 21.43%,
@@ -262,7 +389,6 @@ outset: Creates a 3D outset border effect. */
   padding: 1rem;
   border-radius: 100%;
 }
-
 
 @keyframes mulShdSpin {
   0%,

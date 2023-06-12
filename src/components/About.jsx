@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt options={defaultOptions} className="xs:w-[250px] w-full backdrop-blur">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card backdrop-blur"
+      className="w-full violet-gradient p-[1px] rounded-[20px] shadow-card backdrop-blur"
     >
       <div
         options={{
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className=" rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col blur-card-content"
       >
         <img
           src={icon}
@@ -49,7 +49,9 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p className={`${styles.sectionSubText} name-text-gradient`}>
+          Introduction
+        </p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 

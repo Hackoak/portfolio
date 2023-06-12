@@ -208,6 +208,9 @@ const projects = [
       "Store our all-social account passwords in one place with Strong AES double protection encryption.",
     tags: [
       {
+        name: "BETA",
+        color: "yellow-text-gradient",
+      },{
         name: "flutter",
         color: "blue-text-gradient",
       },
