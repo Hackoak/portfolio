@@ -20,6 +20,8 @@ const App = () => {
     console.log("App initialized");
     // You can perform any initialization tasks here
 
+  const gradient = new Gradient();
+  gradient.initGradient("#gradient-canvas");
     // Clean up function (optional)
     return () => {
       // Clean up tasks (if needed)
