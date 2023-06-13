@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+  import { Gradient } from "../../utils/gradient.js";
 
-const BackgroundComponent = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+function BackgroundComponent() {
+  useEffect(() => {
+    const gradient = new Gradient();
+    gradient.initGradient("#gradient-canvas");
+  }, []);
 
-  const handleMouseMove = (event) => {
-    setPosition({ x: event.clientX, y: event.clientY });
-  };
+  return (
+    <div>
+      <canvas
+        id="gradient-canvas"
+        className="relative w-full h-screen mx-auto"
+        data-js-darken-top
+        data-transition-in
+      />
+    </div>
+  );
+}
 
-  const backgroundStyle = {
-    background: `linear-gradient(to bottom right, #ff00ff, #00ffff, ${position.x}px, ${position.y}px)`,
-    /* Additional background styles can be added here */
-  };
-
-  return <div style={backgroundStyle} onMouseMove={handleMouseMove}></div>;
-};
 export default BackgroundComponent;

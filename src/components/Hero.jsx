@@ -26,12 +26,7 @@ const Hero = () => {
     <section
       className={`relative w-full mx-auto blur-content md:flex sm:h-screen  md:landscape:h-screen`}
     >
-      <canvas
-        id="gradient-canvas"
-        className="relative w-full h-screen mx-auto"
-        data-js-darken-top
-        data-transition-in
-      />
+     
 
       {/* <div class="HomepageHeroGradient Gradient isLoaded">
         <canvas
@@ -43,7 +38,7 @@ const Hero = () => {
           height="600"
         ></canvas>
       </div> */}
-      {/* <BackgroundComponent /> */}
+      <BackgroundComponent />
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-0 px-6 flex flex-row items-start gap-5`}
       >
