@@ -26,7 +26,12 @@ const Hero = () => {
     <section
       className={`relative w-full h-screen mx-auto blur-content md:flex`}
     >
-      <canvas id="gradient-canvas" data-js-darken-top data-transition-in />
+      <canvas
+        id="gradient-canvas"
+        className="relative w-full h-screen mx-auto"
+        data-js-darken-top
+        data-transition-in
+      />
 
       {/* <div class="HomepageHeroGradient Gradient isLoaded">
         <canvas
@@ -85,7 +90,7 @@ const Hero = () => {
           </p>
 
           <div
-            className={`absolute inset-0 top-[650px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+            className={`absolute inset-x-0 bottom-20 p-4 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
           >
             <ButtonComponent />
           </div>

@@ -12,17 +12,7 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-:root {
-  background-color: #060606;
-  color: #e5e7eb;
-  --gradient-1: linear-gradient(118deg, #4ed2f3, #bd93da 80%, #6270ee);
-  --gradient-1-item: linear-gradient(-50deg, #000, #12152e 99%);
-  --gradient-2: linear-gradient(91.83deg, #d03c4a 2.26%, #ac4ada 95.81%);
-  --gradient-3: #111420;
-  background: #111420;
-  background: var(--gradient-3);
-  background-size: 100%;
-}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -196,7 +186,7 @@
   float: right;
   /* left: 300px;
   /* transform: scaleX(-1); */
-  margin-right: -285px;
+  /* margin-right: -285px;  */
 }
 
 .lcbtn {
@@ -221,24 +211,21 @@
   color: transparent;
   /* transition: transform 0.3s ease; */
 }
+
+.social{
+  bottom: -650px;
+  /* top: 100% - 30%; */
+}
 .btn {
   width: 55px;
   height: 55px;
-  margin-right: 21px;
-  /* color: transparent; */
+  margin: 5px;
   align-items: center;
-
+  /* color: transparent; */
   /* background-color: transparent; */
   border: 2px dashed #ffffff;
   padding: 10px;
   border-radius: 20px;
-  /* background: linear-gradient(
-    92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
-    #3bace2 100%,
-    #406aff 117.04%
-  ); */
 }
 .sicon {
   align-items: center;

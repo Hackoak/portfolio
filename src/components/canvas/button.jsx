@@ -21,20 +21,20 @@ const ButtonComponent = () => {
           </div>
         )}
         {!showDiv && (
-          <div className="{ flex flex-row }">
-            <div className="{ btn text-white}">
+          <div className="{ flex }">
+            <div className="{ btn m-4}">
               <img src={github_out} className="{ sicon }" />
             </div>
-            <div className="{ btn blur}">
+            <div className="{ btn m-4}">
               <img src={linkedin} className="{ sicon }" />
             </div>
-            <div className="{ btn }">
+            <div className="{ btn m-4}">
               <img src={discord} className="{  }" />
             </div>
-            <div className="{ btn }">
+            <div className="{ btn m-4}">
               <img src={email} className="{  }" />
             </div>{" "}
-            <div className="{ btn }">
+            <div className="{ btn m-4}">
               <img src={twitter} className="{  }" />
             </div>
           </div>
