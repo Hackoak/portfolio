@@ -25,8 +25,8 @@ const App = () => {
     // Clean up function (optional)
     return () => {
       // Clean up tasks (if needed)
-  const gradient = new Gradient();
-  gradient.initGradient("#gradient-canvas");
+  // const gradient = new Gradient();
+  // gradient.initGradient("#gradient-canvas");
     };
   }, []);
 
