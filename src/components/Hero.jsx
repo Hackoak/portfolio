@@ -24,7 +24,7 @@ const Hero = () => {
   // gradient.initGradient("#gradient-canvas");
   return (
     <section
-      className={`relative w-full h-screen mx-auto blur-content md:flex`}
+      className={`relative w-full mx-auto blur-content md:flex sm:h-screen  md:landscape:h-screen`}
     >
       <canvas
         id="gradient-canvas"
@@ -90,7 +90,7 @@ const Hero = () => {
           </p>
 
           <div
-            className={`absolute inset-x-0 bottom-20 p-4 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+            className={`absolute inset-x-0 bottom-5 sm:bottom-20 p-4 ${styles.paddingX} `}
           >
             <ButtonComponent />
           </div>
