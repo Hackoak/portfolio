@@ -332,6 +332,8 @@ class Gradient {
                     rotation: 0,
                     playing: true
                },
+               console.log(`on connect ${this.conf } `);
+
                document.querySelectorAll("canvas").length < 1 ? console.log("DID NOT LOAD HERO STRIPE CANVAS") : (
 
                     this.minigl = new MiniGl(this.el, null, null, !0),
