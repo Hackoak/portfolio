@@ -15,20 +15,10 @@ import {
 import React, { useEffect } from "react";
 
 const App = () => {
-  // useEffect(() => {
-  //   // Function to execute when the app initializes
-  //   console.log("App initialized");
-  //   // You can perform any initialization tasks here
-
-  // const gradient = new Gradient();
-  // gradient.initGradient("#gradient-canvas");
-  //   // Clean up function (optional)
-  //   return () => {
-  //     // Clean up tasks (if needed)
-  // // const gradient = new Gradient();
-  // // gradient.initGradient("#gradient-canvas");
-  //   };
-  // }, []);
+  useEffect(() => {
+    const gradient = new Gradient();
+    gradient.initGradient("#gradient-canvas");
+  }, []);
 
   return (
     <BrowserRouter>
