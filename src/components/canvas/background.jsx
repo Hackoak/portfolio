@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Gradient } from "../../utils/gradient.js";
 
-function BackgroundComponent() {
+const BackgroundComponent = () => {
   useEffect(() => {
     const gradient = new Gradient();
     gradient.initGradient("#gradient-canvas");
@@ -17,7 +17,7 @@ function BackgroundComponent() {
       />
     </div>
   );
-}
+};
 
 export default BackgroundComponent;
 

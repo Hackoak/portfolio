@@ -45,7 +45,7 @@ const Hero = () => {
           <div
             // variants={fadeIn("up", 0.4)}
             initial="hidden"
-            // whileInView={"show"}
+            whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
             className="mb-6 text-[26px] mt-3 lg:text-[30px]  name-text-gradient font-semibold uppercase leading-[1]"
           >
