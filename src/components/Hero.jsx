@@ -25,8 +25,15 @@ const Hero = () => {
       className={`relative w-full h-[70vh] mx-auto blur-content md:flex sm:h-screen  md:landscape:h-screen`}
     >
       {/* <div id="container"></div> */}
-
-      <BackgroundComponent />
+      <div>
+        <canvas
+          id="gradient-canvas"
+          // className="relative w-full h-[70vh] mx-auto"
+          // data-js-darken-top
+          // data-transition-in
+        />
+      </div>
+      {/* <BackgroundComponent /> */}
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto sm:px-0 px-6 flex flex-row items-start gap-5`}
       >

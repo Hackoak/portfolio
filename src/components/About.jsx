@@ -48,7 +48,9 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        // variants={textVariant()}  
+      >
         <p className={`${styles.sectionSubText} name-text-gradient`}>
           Introduction
         </p>
@@ -56,7 +58,7 @@ const About = () => {
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        // variants={fadeIn("", "", 0.1, 0.5)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I possess strong software development skills and have hands-on
