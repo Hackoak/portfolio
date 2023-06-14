@@ -22,9 +22,8 @@ const Hero = () => {
   // gradient.initGradient("#gradient-canvas");
   return (
     <section
-      className={`relative w-full mx-auto blur-content md:flex sm:h-screen  md:landscape:h-screen`}
+      className={`relative w-full h-[70vh] mx-auto blur-content md:flex sm:h-screen  md:landscape:h-screen`}
     >
-
       {/* <div id="container"></div> */}
 
       <BackgroundComponent />

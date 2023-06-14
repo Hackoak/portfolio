@@ -16,8 +16,8 @@ import React, { useEffect } from "react";
 
 const App = () => {
   useEffect(() => {
-    const gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
+    // const gradient = new Gradient();
+    // gradient.initGradient("#gradient-canvas");
   }, []);
 
   return (

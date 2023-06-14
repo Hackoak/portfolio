@@ -11,7 +11,7 @@ const BackgroundComponent = () => {
     <div>
       <canvas
         id="gradient-canvas"
-        className="relative w-full h-screen mx-auto"
+        // className="relative w-full h-[70vh] mx-auto"
         data-js-darken-top
         data-transition-in
       />
