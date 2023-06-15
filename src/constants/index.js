@@ -32,7 +32,14 @@ import {
   python,
   pytorch,
   tensorflow,
-
+  box,
+  aiAssistant,
+  github,
+  github_out,
+  linkedin,
+  discord,
+  email,
+  twitter,
 
 } from "../assets";
 
@@ -210,6 +217,45 @@ const testimonials = [
   },
 ];
 
+const contacts = [
+  {
+    name:
+      "github",
+    url: "https://github.com/Hackoak",
+    target: "_blank",
+    icon: github_out,
+    hasSub: true,
+  },  {
+    name:
+      "linkedin",
+    url: "https://www.linkedin.com/in/harikrishnan-rv/",
+    target: "_blank",
+    icon: linkedin,
+    hasSub: true,
+  },  {
+    name:
+      "discord",
+    url: "https://discord.gg/QXCkQ4s5",
+    target: "_blank",
+    icon: discord,
+    hasSub: false,
+  },  {
+    name:
+      "email",
+    url: "mailto:devharipod@gmail.com",
+    target: "_blank",
+    icon: email,
+    hasSub: false,
+  },  {
+    name:
+      "twitter",
+    url: "https://twitter.com/Hari_Krishnan03",
+    target: "_blank",
+    icon: twitter,
+    hasSub: false,
+  },
+];
+
 const projects = [
   {
     name: "ArmorDef",
@@ -231,7 +277,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: carrent,
+    image: box,
     source_code_link: "https://github.com/",
   },
   {
@@ -248,7 +294,7 @@ const projects = [
         color: "green-text-gradient",
       }
     ],
-    image: jobit,
+    image: aiAssistant,
     source_code_link: "https://github.com/",
   },
   // {
@@ -274,4 +320,4 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, contacts };
