@@ -21,12 +21,25 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import aws from "./tech/aws.svg";
+import linux from "./tech/linux.svg";
+import nestjs from "./tech/nestjs.svg";
+import nginx from "./tech/nginx.svg";
+import python from "./tech/python.svg";
+import pytorch from "./tech/pytorch.svg";
+import tensorflow from "./tech/tensorflow.svg";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import astutex from "./company/astutex.jpg";
 import ilapz from "./company/ilapz.jpg";
+
+
+import box from "./box.png";
+
+import aiAssistant from "./ai.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -60,12 +73,21 @@ export {
   tailwind,
   typescript,
   threejs,
+  carrent,
+  jobit,
+  aws,
+  linux,
+  nestjs,
+  nginx,
+  python,
+  pytorch,
+  tensorflow,
   meta,
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
+  box,
+  aiAssistant,
   tripguide,
   astutex,
   ilapz,

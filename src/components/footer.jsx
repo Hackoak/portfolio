@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <>
       <footer class="footer">
-        <div class="flex justify-center item-center text-secondary text-[12px] max-w-3xl leading-[20px]">
+        <div class="flex justify-center item-center text-secondary text-[12px] leading-[20px]">
           <p class="text-center ">
             &copy; 2023 Hackoak. All rights reserved. <br /> Designed by
             Harikrishnan

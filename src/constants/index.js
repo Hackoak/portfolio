@@ -24,7 +24,16 @@ import {
   tripguide,
   threejs,
   astutex,
-  ilapz
+  ilapz,
+  aws,
+  linux,
+  nestjs,
+  nginx,
+  python,
+  pytorch,
+  tensorflow,
+
+
 } from "../assets";
 
 export const navLinks = [
@@ -62,39 +71,36 @@ const services = [
 ];
 
 const technologies = [
-  
+
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "aws",
+    icon: aws,
   },
 
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-{
-    name: "HTML 5",
-    icon: html,
+    name: "python",
+    icon: python,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "linux",
+    icon: linux,
+  },
+  {
+    name: "pytorch",
+    icon: pytorch,
+  },
+
+  {
+    name: "tensorflow",
+    icon: tensorflow,
+  },
+  {
+    name: "nginx",
+    icon: nginx,
+  },
+  {
+    name: "docker",
+    icon: docker,
   },
   {
     name: "JavaScript",
@@ -109,12 +115,15 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "nestjs",
+    icon: nestjs,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "MongoDB",
+    icon: mongodb,
+  }, {
+    name: "figma",
+    icon: figma,
   },
 
 ];
@@ -132,7 +141,7 @@ const experiences = [
       "Developed predictive models to inform business decisions, resulting in 10% reduction in customer churn.",
       "Utilized Python and machine learning libs such as TensorFlow PyTorch to extract insights from data.",
     ],
-  },  
+  },
   {
     title: "Software Developer",
     company_name: "ILapz Technologies",
@@ -210,14 +219,14 @@ const projects = [
       {
         name: "BETA",
         color: "yellow-text-gradient",
-      },{
+      }, {
         name: "flutter",
         color: "blue-text-gradient",
       },
       {
         name: "restapi",
         color: "pink-text-gradient",
-      },{
+      }, {
         name: "mongodb",
         color: "green-text-gradient",
       },
