@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { twitter, linkedin, github_out, discord, email } from "../../assets";
 
-const ButtonComponent = () => {
+const ButtonComponent =  (props) =>{
   const [showDiv, setShowDiv] = useState(false);
 
   const handleClick = () => {
@@ -10,7 +10,8 @@ const ButtonComponent = () => {
 
 const sty =
   "w-[55px] h-[55px] flex items-center justify-center m-2 px-3 py-2 rounded-[20px] text-base  sm:w-25px sm:h-25px lg:text-2xl sm:px-6 md:px-8 lg:px-10 sm:py-3 md:py-4 lg:py-5 border-dashed border-2 border-white-500";
-
+const v = props.isContact ? "cbtn" : "btn";
+const s = props.isContact ? "csicon" : "sicon";
   return (
     <div>
       <button onClick={handleClick}>
@@ -25,19 +26,19 @@ const sty =
         )}
         {!showDiv && (
           <div className="{ flex }">
-            <div className="{ btn m-4}">
-              <img src={github_out} className="{ sicon }" />
+            <div className={` ${v} m-4`}>
+              <img src={github_out} className={` ${s} `} />
             </div>
-            <div className="{ btn m-4}">
-              <img src={linkedin} className="{ sicon }" />
+            <div className={` ${v} m-4`}>
+              <img src={linkedin} className={` ${s} `} />
             </div>
-            <div className="{ btn m-4}">
+            <div className={` ${v} m-4`}>
               <img src={discord} className="{  }" />
             </div>
-            <div className="{ btn m-4}">
+            <div className={` ${v} m-4`}>
               <img src={email} className="{  }" />
             </div>{" "}
-            <div className="{ btn m-4}">
+            <div className={` ${v} m-4`}>
               <img src={twitter} className="{  }" />
             </div>
           </div>

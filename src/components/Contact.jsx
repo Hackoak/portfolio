@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import { EarthCanvas, ButtonComponent } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Harikrishnan Core Dev",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "devharipod@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -66,21 +66,24 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden `}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] p-8 rounded-2xl bg-white-100 bg-opacity-20"
       >
         <p className={`${styles.sectionSubText} name-text-gradient`}>
           Get in touch
         </p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
+        <div className="mt-3">
+          <ButtonComponent isContact={true} />
+        </div>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-5 flex flex-col gap-8"
         >
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -90,7 +93,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white-100 bg-opacity-0  backdrop-blur shadow-md  py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -101,7 +104,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white-100 bg-opacity-0  backdrop-blur shadow-md py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -112,16 +115,17 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white-100 bg-opacity-0  backdrop-blur shadow-md py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex justify-center item-center ">
+            <button
+              type="submit"
+              className="bg-white-100 bg-opacity-10 mixed-gradient justify-center item-center shadow-md py-3 px-[50px] rounded-[30px] outline-none w-fit font-bold text-white"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </div>
         </form>
       </motion.div>
 

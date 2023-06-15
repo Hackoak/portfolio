@@ -16,14 +16,21 @@ const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        // color: "#fff",
+        background: "rgba(0, 0, 0, 0)",
+        // color: "transperant",
         // 'background-color': 'rgba(255, 255, 255, 0.8)',
         "border-radius": "18px",
         "backdrop-filter": "blur(20px)",
-        'box-shadow': '0 0 10px rgba(0, 0, 0, 0.2)'
+        "box-shadow": "0 0 10px rgba(0, 0, 0, 0.2)",
       }}
-      contentArrowStyle={{ borderRight: "7px dashed  #232631" }}
+      contentArrowStyle={{
+        borderRight: "7px dashed  rgba(0, 0, 0, 0.5)",
+        // background: "rgba(0, 0, 0, 0)",
+
+        "border-radius": "18px",
+        // "backdrop-filter": "blur(20px)",
+        // "box-shadow": "0 0 10px rgba(0, 0, 0, 0.2)",
+      }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -31,7 +38,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%]  rounded-[30px] "
+            className="w-[80%] h-[80%]  rounded-[30px] "
           />
         </div>
       }

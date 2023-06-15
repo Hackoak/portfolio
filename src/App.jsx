@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer,
 } from "./components";
 import { Gradient } from "./utils/gradient.js";
 import React, { useEffect } from "react";
@@ -59,6 +60,7 @@ const App = () => {
             <div className="blur-content ">
               <Contact />
               <StarsCanvas />
+              <Footer />
             </div>
           </div>
         </div>
