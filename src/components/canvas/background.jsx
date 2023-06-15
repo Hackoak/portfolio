@@ -1,7 +1,23 @@
 import React, { useEffect } from "react";
 import { Gradient } from "../../utils/gradient.js";
 
+import { useMediaQuery } from "react-responsive";
+
 const BackgroundComponent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 450 });
+
+  useEffect(() => {
+    if (!isMobile) {
+      const gradient = new Gradient();
+      gradient.initGradient("#gradient-canvas");
+    }
+    return () => {
+      // Clean up tasks (if needed)
+      // const gradient = new Gradient();
+      // gradient.initGradient("#gradient-canvas");
+    };
+  }, []);
+
   // useEffect(() => {
   //   const gradient = new Gradient();
   //   gradient.initGradient("#gradient-canvas");

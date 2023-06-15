@@ -11,15 +11,10 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-  import { Gradient } from "./utils/gradient.js";
+import { Gradient } from "./utils/gradient.js";
 import React, { useEffect } from "react";
 
 const App = () => {
-  useEffect(() => {
-    const gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
-  }, []);
-
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
