@@ -28,14 +28,14 @@ const FreelancingCard = ({ index, freelancing, name, kind, image }) => (
 
 const FreelancingServices = () => {
   return (
-    <div className={`mt-12 rounded-[20px] `}>
+    <div className={``}>
       <div className={` rounded-2xl ${styles.padding} min-h-[300px]`}>
-        <motion.div variants={textVariant()}>
+        <div variants={textVariant()}>
           <p className={`${styles.sectionSubText} name-text-gradient`}>
             Services i do On
           </p>
           <h2 className={styles.sectionHeadText}>Freelance.</h2>
-        </motion.div>
+        </div>
       </div>
 
                    {/* <div> </div> */}
