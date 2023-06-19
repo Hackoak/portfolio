@@ -65,7 +65,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Flutter Developer",
+    title: "App Developer",
     icon: m2,
   },
   {
@@ -75,6 +75,10 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "FreeLancer",
+    icon: creator,
   },
   {
     title: "Content Creator",

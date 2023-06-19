@@ -7,8 +7,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { freelance } from "../constants";
 
 const FreelancingCard = ({ index, freelancing, name, kind, image }) => (
-  <motion.div
-    variants={fadeIn("", "spring", index * 0.3, 0.5)}
+  <div
+    // variants={fadeIn("", "spring", index * 0.3, 0.5)}
     className="mixed-card-content p-10 rounded-3xl xs:w-[320px] w-full"
   >
     <div className="mt-1">
@@ -23,7 +23,7 @@ const FreelancingCard = ({ index, freelancing, name, kind, image }) => (
         </p>
       </div>
     </div>
-  </motion.div>
+  </div>
 );
 
 const FreelancingServices = () => {
