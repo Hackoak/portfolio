@@ -62,6 +62,8 @@ const Hero = () => {
                 2000,
                 "Data Scientist",
                 2000,
+                "Freelancer",
+                2000,
                 "Blogger",
                 2000,
               ]}

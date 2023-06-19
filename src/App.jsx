@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
   Footer,
+  Freelancing,
 } from "./components";
 import { Gradient } from "./utils/gradient.js";
 import React, { useEffect } from "react";
@@ -38,7 +39,7 @@ const App = () => {
 
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
           <div className="blur-skill-content ">
-            <Tech />
+            {/* <Tech /> */}
           </div>
         </div>
 
@@ -55,6 +56,13 @@ const App = () => {
             </div>
           </div>
         </div> */}
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+            <div className="blur-content ">
+              <Freelancing />
+            </div>
+          </div>
+        </div>
         <div className="relative z-0">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
             <div className="blur-content ">

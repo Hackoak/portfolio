@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { styles } from "../styles";
+import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { styles } from "../styles";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -47,7 +47,7 @@ const Navbar = () => {
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Harkrishnan &nbsp;
-            <span className="sm:block hidden"> | Core DEV </span>
+            <span className="sm:block hidden"> | Hackoak </span>
           </p>
           <div className="{ beta }">
             <p

@@ -2,7 +2,7 @@ import logo from "./small_glow.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
-import web from "./web.png";
+import web from "./web1.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -28,6 +28,7 @@ import nginx from "./tech/nginx.svg";
 import python from "./tech/python.svg";
 import pytorch from "./tech/pytorch.svg";
 import tensorflow from "./tech/tensorflow.svg";
+import flutter from "./tech/flutter.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -50,6 +51,11 @@ import email from "./social/email.svg";
 import github_out from "./social/github.svg";
 import linkedin from "./social/linkedin.svg";
 import twitter from "./social/twitter.svg";
+import mobile_1 from "./mobile_1.png";
+import m from "./m.png";
+import m1 from "./m1.png";
+import m2 from "./m2.png";
+import m2p from "./m2p.png";
 
 export {
   logo,
@@ -73,6 +79,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  flutter,
   carrent,
   jobit,
   aws,
@@ -96,4 +103,9 @@ export {
   github_out,
   discord,
   email,
+  mobile_1,
+  m1,
+  m2,
+  m2p,
+  m
 };

@@ -37,7 +37,7 @@ const ServiceCard = ({ index, title, icon }) => (
           className="w-16 h-16 object-contain"
         />
 
-        <h3 className="text-white text-[20px] font-bold text-center">
+        <h3 className="text-white text-[20px] font-bold text-center name-text-gradient">
           {title}
         </h3>
       </div>
@@ -49,7 +49,7 @@ const About = () => {
   return (
     <>
       <motion.div
-        // variants={textVariant()}  
+        // variants={textVariant()}
       >
         <p className={`${styles.sectionSubText} name-text-gradient`}>
           Introduction
@@ -68,14 +68,9 @@ const About = () => {
         clients. Together, we can develop solutions that are efficient,
         scalable, and user-friendly, addressing real-world challenges. I am
         eager to work with you to transform your ideas into reality.
-        {/* I'm a skilled software developer with experience in Flutter, TypeScript and
-        JavaScript, and expertise in frameworks like Node.js, and
-        NestJs. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life! */}
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10 backdrop-blur">
+      <div className="mt-20 flex flex-wrap justify-center item-center gap-10 backdrop-blur">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

@@ -35,12 +35,17 @@ import {
   box,
   aiAssistant,
   github,
+  flutter,
   github_out,
   linkedin,
   discord,
   email,
   twitter,
-
+  m,
+  m1,
+  m2,
+  m2p,
+  mobile_1
 } from "../assets";
 
 export const navLinks = [
@@ -61,7 +66,7 @@ export const navLinks = [
 const services = [
   {
     title: "Flutter Developer",
-    icon: mobile,
+    icon: m2,
   },
   {
     title: "Data Scientist",
@@ -109,6 +114,10 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  // {
+  //   name: "flutter",
+  //   icon: flutter,
+  // },
   {
     name: "JavaScript",
     icon: javascript,
@@ -217,6 +226,85 @@ const testimonials = [
   },
 ];
 
+const freelance = [
+  {
+    name: "FLUTTER",
+    kind: "MOBILE",
+    image: flutter,
+  },
+  {
+    name: "NODE JS",
+    kind: "BACKEND",
+    image: nodejs,
+  },
+  {
+    name: "NEST JS",
+    kind: "BACKEND",
+    image: nestjs,
+  },
+  {
+    name: "DOCKER",
+    kind: "BACKEND",
+    image: docker,
+  },
+  {
+    name: "JAVASCRIPT",
+    kind: "BACKEND",
+    image: javascript,
+  },
+  {
+    name: "TYPESCRIPT",
+    kind: "BACKEND",
+    image: typescript,
+  },
+  {
+    name: "MONGODB",
+    kind: "BACKEND",
+    image: mongodb,
+  },
+
+
+  {
+    name: "NGINX",
+    kind: "SERVER",
+    image: nginx,
+  },
+  {
+    name: "LINUX",
+    kind: "SERVER",
+    image: linux,
+  },
+  {
+    name: "AWS",
+    kind: "SERVER",
+    image: aws,
+  },
+
+
+  {
+    name: "FIGMA",
+    kind: "UI/UX",
+    image: figma,
+  },
+
+
+  {
+    name: "PYTHON",
+    kind: "AI",
+    image: python
+  },
+  {
+    name: "PYTORCH",
+    kind: "AI",
+    image: pytorch
+  },
+  {
+    name: "TENSORFLOW",
+    kind: "AI",
+    image: tensorflow
+  },
+];
+
 const contacts = [
   {
     name:
@@ -320,4 +408,4 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects, contacts };
+export { services, technologies, experiences, testimonials, projects, contacts, freelance };

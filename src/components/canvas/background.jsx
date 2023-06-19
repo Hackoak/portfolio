@@ -7,7 +7,8 @@ const BackgroundComponent = () => {
   const isMobile = useMediaQuery({ maxWidth: 450 });
 
   useEffect(() => {
-    if (!isMobile) {
+    // if (!isMobile)
+    {
       const gradient = new Gradient();
       gradient.initGradient("#gradient-canvas");
     }

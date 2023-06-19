@@ -9,6 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Footer from "./footer";
+import Freelancing from "./Freelancing";
 
 
 export {
@@ -28,4 +29,5 @@ export {
   ButtonComponent,
   bgg,
   Footer,
+  Freelancing,
 };
