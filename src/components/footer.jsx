@@ -13,7 +13,7 @@ const Footer = () => {
       <footer class="footer">
         <div class="flex justify-center item-center text-secondary text-[12px] leading-[20px]">
           <p class="text-center ">
-            &copy; 2023 Hackoak. All rights reserved. <br /> Designed by
+            &copy; 2023 Hackoak. All rights reserved. <br /> Developed by
             Harikrishnan
           </p>
         </div>

@@ -59,11 +59,12 @@ const About = () => {
 
       <motion.p
         // variants={fadeIn("", "", 0.1, 0.5)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]"
       >
         I possess strong software development skills and have hands-on
         experience in technologies such as Flutter, TypeScript, and JavaScript.
-        I specialize in utilizing frameworks like Node.js and NestJs. My ability
+        I specialize in utilizing frameworks like Node.js and NestJs. And Data science technologies
+        like Tensorflow, PyTorch and also handling AWS services. My ability
         to grasp new concepts swiftly enables me to collaborate effectively with
         clients. Together, we can develop solutions that are efficient,
         scalable, and user-friendly, addressing real-world challenges. I am

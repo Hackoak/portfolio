@@ -6,6 +6,61 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { freelance } from "../constants";
 
+import { useState } from "react";
+
+const Button = ({ index, freelancing, name, kind, image }) => (
+  <button
+    className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+    onClick={() => toggleTab(1)}
+  ></button>
+);
+
+function Tabs() {
+  const [toggleState, setToggleState] = useState(1);
+  const [active, setActive] = useState("AI");
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+  const len = freelance.map((e, index) => e.kind);
+  const uniqueList = [...new Set(len)];
+  console.log(uniqueList);
+  return (
+    <div className="mt-10">
+      <div
+        className={`mt-10 pb-14 ${styles.paddingX} flex flex-wrap justify-center item-center gap-7`}
+      >
+        {freelance.map((freelancing, index) => {
+          if (active === freelancing.kind) {
+            return (
+              <FreelancingCard
+                key={freelancing.name}
+                index={index}
+                {...freelancing}
+              />
+            );
+          }
+        })}
+      </div>
+      <div className=" flex flex-row justify-center item-center   backdrop-blur rounded-full ">
+        <div className=" w-fit  py-2 px-6 flex flex-row justify-center item-center gap-10 bloc-tabs  backdrop-blur rounded-full ">
+          {uniqueList.map((nav) => (
+            <div
+              key={nav}
+              className={`${
+                active !== nav ? "text-white text-opacity-50" : "name-text-gradient"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive(nav)}
+            >
+              <a href={`#${nav.id}`}>{nav} </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 const FreelancingCard = ({ index, freelancing, name, kind, image }) => (
   <div
     // variants={fadeIn("", "spring", index * 0.3, 0.5)}
@@ -29,7 +84,7 @@ const FreelancingCard = ({ index, freelancing, name, kind, image }) => (
 const FreelancingServices = () => {
   return (
     <div className={``}>
-      <div className={` rounded-2xl ${styles.padding} min-h-[300px]`}>
+      <div className={` ${styles.paddingX}`}>
         <div variants={textVariant()}>
           <p className={`${styles.sectionSubText} name-text-gradient`}>
             Services i do On
@@ -37,17 +92,7 @@ const FreelancingServices = () => {
           <h2 className={styles.sectionHeadText}>Freelance.</h2>
         </div>
       </div>
-
-                   {/* <div> </div> */}
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {freelance.map((freelancing, index) => (
-          <FreelancingCard
-            key={freelancing.name}
-            index={index}
-            {...freelancing}
-          />
-        ))}
-      </div>
+      <Tabs />
     </div>
   );
 };

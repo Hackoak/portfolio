@@ -66,7 +66,7 @@ export const navLinks = [
 const services = [
   {
     title: "App Developer",
-    icon: m2,
+    icon: mobile,
   },
   {
     title: "Data Scientist",
@@ -77,8 +77,8 @@ const services = [
     icon: backend,
   },
   {
-    title: "FreeLancer",
-    icon: creator,
+    title: "Freelancer",
+    icon: m2,
   },
   {
     title: "Content Creator",
@@ -118,14 +118,14 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-  // {
-  //   name: "flutter",
-  //   icon: flutter,
-  // },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "flutter",
+    icon: flutter,
   },
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
   {
     name: "TypeScript",
     icon: typescript,
@@ -231,15 +231,15 @@ const testimonials = [
 ];
 
 const freelance = [
-  {
-    name: "FLUTTER",
-    kind: "MOBILE",
-    image: flutter,
-  },
+  
   {
     name: "NODE JS",
     kind: "BACKEND",
     image: nodejs,
+  },{
+    name: "FLUTTER",
+    kind: "MOBILE",
+    image: flutter,
   },
   {
     name: "NEST JS",
@@ -269,6 +269,21 @@ const freelance = [
 
 
   {
+    name: "PYTHON",
+    kind: "AI",
+    image: python
+  },
+  {
+    name: "PYTORCH",
+    kind: "AI",
+    image: pytorch
+  },
+  {
+    name: "TENSORFLOW",
+    kind: "AI",
+    image: tensorflow
+  },
+  {
     name: "NGINX",
     kind: "SERVER",
     image: nginx,
@@ -292,21 +307,6 @@ const freelance = [
   },
 
 
-  {
-    name: "PYTHON",
-    kind: "AI",
-    image: python
-  },
-  {
-    name: "PYTORCH",
-    kind: "AI",
-    image: pytorch
-  },
-  {
-    name: "TENSORFLOW",
-    kind: "AI",
-    image: tensorflow
-  },
 ];
 
 const contacts = [

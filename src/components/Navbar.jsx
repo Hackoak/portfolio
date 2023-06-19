@@ -43,7 +43,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-9 h-9 object-center rounded-full"
+            className="w-9 h-9 object-center rounded-full border border-solid border-2 border-white-500"
           />
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Harkrishnan &nbsp;

@@ -76,9 +76,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop mApps for android & iOS,{" "}
             <br className="sm:block hidden" />
-            backend apps, End-to-end AWS Server handling,
+            Backend apps, End-to-end AWS Server handling,
             <br className="sm:block hidden" />
-            Data Science
+            Data Science models.
           </p>
 
           <div
